@@ -350,6 +350,9 @@ const projects = [
     description: "The first Dar-e-Arqam School was established in Sargodha in 1990 Then, like-minded people gathered and spread the rays of knowledge in a very short time. These schools are progressing and increasing in number tremendously. Right now, The Dar-e-Arqam School is one of the largest growing school systems with more than 2,00,000 students and more than 700 branches all over Pakistan. This appreciation and recognition by the society are more because of its unique way of imparting modern education with Islamic perspective.",
     technologies: "React Native, Firebase, Laravel",
     associate: " Associate with PreeSoft Pvt Ltd.",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.darearqam&pcampaignid=web_share",
+    appStoreLink: "https://apps.apple.com/us/app/dar-e-arqam-schools/id6444527803",
+    websiteLink: "https://darearqamsgd.edu.pk/",
     images: [
       'assets/img/portfolio/smsApp/0.png',
       'assets/img/portfolio/smsApp/1.png',
@@ -374,6 +377,8 @@ const projects = [
     description: "This is conversion to mobile e-commerce app from WooCommerce Website. This app have all important features of e-commerce mobil application including add to cart, remove from cart, checkout billing information, select payment method and order confirmation details. This app have others features also like authentication, notifications, validations, check all orders, support team, contact details, complaints form, order details etc.",
     technologies: "React Native, WooCommerce APIs, WordPress",
     associate: " Associate with PreeSoft Pvt Ltd.",
+    websiteLink:"https://brightvision.com.pk/",
+    playStoreLink:"https://play.google.com/store/apps/details?id=com.brightvisione.commerce&pcampaignid=web_share",
     images: [
       'assets/img/portfolio/brightVisionApp/0.png',
       'assets/img/portfolio/brightVisionApp/1.png',
@@ -404,6 +409,9 @@ const projects = [
     description: "GAWAPP is an innovative mobile app built with React Native and Node.js, designed to connect coffee shops and coffee enthusiasts. For coffee shops, it offers features like profile management, menu customization, order handling, table reservations, promotions, and analytics. Coffee lovers can explore nearby cafes, place customized orders, reserve tables, share reviews, and connect socially. With real-time chat, geolocation, and secure payments, GAWAPP transforms the coffee experience by fostering seamless interactions and building a vibrant coffee community.",
     technologies: "React Native, Node js, Mongo DB, Firebase",
     associate: " Associate with Falcon Consulting.",
+    websiteLink:"https://gawapp.com/",
+    appStoreLink:"https://apps.apple.com/ae/app/gawapp/id6468561505",
+    playStoreLink:"https://play.google.com/store/apps/details?id=com.gawapp&pcampaignid=web_share",
     images: [
       'assets/img/portfolio/GawApp/0.png',
       'assets/img/portfolio/GawApp/1.png',
@@ -434,6 +442,7 @@ const projects = [
     description: "Ezy Event is your all-in-one event management app, designed to streamline everything from planning to execution. Effortlessly create events, book services like caterers and photographers, send interactive invitations, and manage RSVPs in real-time. With features like location-based services, in-app chat, guest list management, and budget tracking, Ezy Event ensures a seamless planning experience. Secure and user-friendly, it’s perfect for any event—corporate, weddings, or fundraisers. Create unforgettable experiences with Ezy Event today!.",
     technologies: "React Native, Node js, Mongo DB, Firebase",
     associate: " Associate with Falcon Consulting.",
+    websiteLink:"https://ezyevent-dev.falconweb.app/",
     images: [
       'assets/img/portfolio/ezeEvent/0.png',
       'assets/img/portfolio/ezeEvent/1.png',
@@ -458,6 +467,7 @@ const projects = [
     description: "Ezy Event is the ultimate app for organizing unforgettable events with ease. Plan seamlessly with features like event creation, service booking, interactive invitations, location-based services, and real-time chat. Manage guest lists, track expenses, and coordinate effortlessly—all while ensuring data security. Whether it’s a wedding, conference, or fundraiser, Ezy Event empowers you to create memorable experiences.",
     technologies: "React Native, Node js, Mongo DB, Firebase",
     associate: " Associate with Falcon Consulting.",
+    websiteLink:"https://ezyevent-dev.falconweb.app/",
     images: [
       'assets/img/portfolio/ezeEvent/13.png',
       'assets/img/portfolio/ezeEvent/14.png',
@@ -560,9 +570,10 @@ const projects = [
   {
     id: 8,
     title: "ACMUV - Umrah app",
-    description: "The ACMUV Umrah app represents a significant milestone in providing comprehensive assistance to pilgrims embarking on their spiritual journey. As the developer, my role was pivotal in shaping the app's functionality and usability. From designing the intuitive user interface to implementing features such as invocations, practical advice, and discovery guides, every aspect was meticulously crafted to cater to the diverse needs of pilgrims. Integrating crucial elements like a suitcase checklist and clear instructions for performing Umrah rituals ensured that users could navigate their journey with confidence and ease. Collaborating closely with content creators and subject matter experts, we curated accurate and relevant information to enrich the user experience. Through rigorous testing and optimization, we ensured the app's reliability across various devices and platforms. Today, the ACMUV Umrah app stands as a testament to our collective efforts, providing pilgrims with invaluable support and guidance throughout their spiritual odyssey.",
+    description: "The ACMUV Umrah app represents a significant milestone in providing comprehensive assistance to pilgrims embarking on their spiritual journey. As the developer, my role was pivotal in shaping the app's functionality and usability. Integrating crucial elements like a suitcase checklist and clear instructions for performing Umrah rituals ensured that users could navigate their journey with confidence and ease. Through rigorous testing and optimization, we ensured the app's reliability across various devices and platforms. Today, the ACMUV Umrah app stands as a testament to our collective efforts, providing pilgrims with invaluable support and guidance throughout their spiritual odyssey.",
     technologies: "React Native, Node js, Mongo DB, Firebase",
     associate: " Associate with Falcon Consulting.",
+    websiteLink:"https://www.associationcypres.fr/",
     images: [
       'assets/img/portfolio/Umrah/0.png',
       'assets/img/portfolio/Umrah/1.png',
@@ -645,6 +656,7 @@ const projects = [
     description: "Telehealth Doctor-Patient App simplifies healthcare by enabling users to book appointments and lab tests, select doctors and centers, and make secure payments using Stripe, integrated with Auth0 for authentication. Patients can access medical records, while doctors can view patient histories, conduct audio consultations, and provide prescriptions. This app ensures seamless and efficient healthcare access for both patients and doctors.",
     technologies: "React Native, Firebase, Node js, Mongo DB, Auth 0, Stripe and socket.",
     associate: "Personal Client Project.",
+    websiteLink:'https://dev.myhealthcaresupport.co.uk/',
     images: [
       "assets/img/portfolio/Telehealth/0.png",
       "assets/img/portfolio/Telehealth/1.png",
@@ -732,6 +744,7 @@ const projects = [
     description: "The SHL CRM App is designed to streamline equipment rental for movie theaters and film production. Users can create projects, manage opportunities, and add items to those opportunities. With features like adding items to favorites, creating a cart, and renting out equipment directly through the app, it simplifies the rental process. The app caters to organizational needs by allowing users to manage and rent equipment efficiently for their projects.",
     technologies: "React Native, Firebase,Laravel, Mongo DB, My SQL.",
     associate: "Associate with PreeSoft Pvt Ltd.",
+    websiteLink:'https://shl.london/',
     images: [
       "assets/img/portfolio/SHLCrm/cover.jpg",
       "assets/img/portfolio/SHLCrm/0.jpg",
@@ -796,6 +809,9 @@ const projects = [
     description: "EZELOGS is a robust, cloud-based SaaS platform designed to revolutionize construction project management. The software integrates effortlessly with existing accounting systems and offers an array of features, including time management, resource tracking, daily field management, safety checklists, bid management, project closeouts, and productivity tracking using cost codes. Accessible across both mobile and desktop platforms, EZELOGS ensures that construction teams can monitor and manage projects effectively, whether they are in the office or on-site.",
     technologies: "React Native, Firebase, Laravel, Mongo DB, My SQL.",
     associate: " Associate with PreeSoft Pvt Ltd.",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.ezelogsapp&pcampaignid=web_share",
+    appStoreLink: "https://apps.apple.com/us/app/ezelogs-construction-software/id1575217159",
+    websiteLink: "https://ezelogs.com/",
     images: [
       "assets/img/portfolio/EZELogs/cover.jpg",
       "assets/img/portfolio/EZELogs/0.jpg",
@@ -868,6 +884,9 @@ const projects = [
     description: "The EZELOGS app extends these capabilities to mobile devices. With its intuitive design, the app makes it easy to create safety reports, track project progress, manage budgets, and collaborate with team members in real time. Key app features include scheduling tools, safety toolbox talk summaries, and performance monitoring analytics that ensure projects stay on track and within budget. Available on iOS and Android, the EZELOGS app empowers construction professionals with the tools needed to improve efficiency, reduce risks, and enhance overall project performance.",
     technologies: "React Native, Firebase, Laravel, Mongo DB, My SQL.",
     associate: " Associate with PreeSoft Pvt Ltd.",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.ezelogsapp&pcampaignid=web_share",
+    appStoreLink: "https://apps.apple.com/us/app/ezelogs-construction-software/id1575217159",
+    websiteLink: "https://ezelogs.com/",
     images: [
       "assets/img/portfolio/EZELogs/cover.jpg",
       "assets/img/portfolio/EZELogs/61.jpg",
@@ -936,6 +955,40 @@ const projects = [
   },
 ];
 
+// function openModal(projectId) {
+//   // Find the project based on the ID
+//   const project = projects.find(p => p.id === projectId);
+
+//   if (project) {
+//     // Set project details in the modal
+//     document.getElementById('modal-title').innerText = project.title;
+//     document.getElementById('modal-description').innerText = project.description;
+//     document.getElementById('modal-technologies').innerText = project.technologies;
+//     document.getElementById('modal-associate').innerText = project.associate;
+
+
+//     // Display images in the modal
+//     const imageContainer = document.getElementById('modal-images');
+//     imageContainer.innerHTML = '';  // Clear previous images
+
+//     // Add all project images to the modal
+//     project.images.forEach((image, index) => {
+//       const imgElement = document.createElement('img');
+//       imgElement.src = image;
+//       imgElement.alt = 'Project Image';
+//       imgElement.classList.add('modal-image');
+
+//       // Add click event to open fullscreen modal
+//       imgElement.onclick = () => openFullscreenModal(project.images, index);
+
+//       imageContainer.appendChild(imgElement);
+//     });
+
+
+//     // Show the modal
+//     document.getElementById('modal').style.display = 'block';
+//   }
+// }
 function openModal(projectId) {
   // Find the project based on the ID
   const project = projects.find(p => p.id === projectId);
@@ -947,10 +1000,37 @@ function openModal(projectId) {
     document.getElementById('modal-technologies').innerText = project.technologies;
     document.getElementById('modal-associate').innerText = project.associate;
 
+    // Set links for the buttons by their IDs
+    if (project.playStoreLink) {
+      document.getElementById('play-store-btn').href = project.playStoreLink;
+    } else {
+      document.getElementById('play-store-btn').style.display = 'none';
+    }
 
-    // Display images in the modal
+    if (project.appStoreLink) {
+      document.getElementById('app-store-btn').href = project.appStoreLink;
+    } else {
+      document.getElementById('app-store-btn').style.display = 'none';
+    }
+
+    if (project.websiteLink) {
+      document.getElementById('website-btn').href = project.websiteLink;
+    } else {
+      document.getElementById('website-btn').style.display = 'none';
+    }
+
+
+    // Get the modal image container and clear it
     const imageContainer = document.getElementById('modal-images');
+    const loadingMessage = document.getElementById('loading-message');
     imageContainer.innerHTML = '';  // Clear previous images
+
+    // Show the loading message initially
+    loadingMessage.style.display = 'block';
+    imageContainer.style.display = 'none';
+
+    let imagesLoaded = 0;
+    const totalImages = project.images.length;
 
     // Add all project images to the modal
     project.images.forEach((image, index) => {
@@ -959,17 +1039,28 @@ function openModal(projectId) {
       imgElement.alt = 'Project Image';
       imgElement.classList.add('modal-image');
 
+      // When each image is loaded, increment the counter
+      imgElement.onload = () => {
+        imagesLoaded++;
+
+        // If all images are loaded, hide the loading message and show images
+        if (imagesLoaded === totalImages) {
+          loadingMessage.style.display = 'none';  // Hide loading message
+          imageContainer.style.display = 'flex';   // Show images container
+        }
+      };
+
       // Add click event to open fullscreen modal
       imgElement.onclick = () => openFullscreenModal(project.images, index);
 
       imageContainer.appendChild(imgElement);
     });
 
-
     // Show the modal
     document.getElementById('modal').style.display = 'block';
   }
 }
+
 
 function closeModal() {
   document.getElementById('modal').style.display = 'none';

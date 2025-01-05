@@ -552,3 +552,82 @@
 .custom-rotate {
   transform: rotate(45deg); 
 } */
+
+/* Style for the custom hero section */
+.custom-hero-text {
+  text-align: center;
+  padding: 50px;
+}
+
+.custom-hero-btn {
+  margin-top: 20px; /* Add space above the button */
+}
+
+.custom-btn {
+  display: inline-block;
+  padding: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color:  #fec544; /* Button color */
+  color: black;
+  text-decoration: none; /* Remove underline */
+  border-radius: 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #fec544; /* Darker shade on hover */
+  color: #111;
+}
+
+/* Style for loading spinner or message */
+#loading-message {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  padding: 20px;
+  display: block;  /* Show loading message initially */
+}
+
+/* Style for modal images container */
+.modal-images-container {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 200px; */
+  position: relative;
+}
+
+/* Style for modal buttons container */
+.modal-buttons-container {
+  display: flex;
+  justify-content: left; /* Space out the buttons evenly */
+  margin-top: 20px;
+  gap: 5px;
+}
+
+/* Style for individual buttons */
+.modal-btn {
+  padding: 10px 14px;
+  background-color: #0a6e73; /* Green background for buttons */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.modal-btn:hover {
+  background-color: #033c3f; /* Darker green on hover */
+  color: white;
+
+}
+
+/* .modal-images-container img {
+  margin: 10px;
+  max-width: 100%;
+  max-height: 100px;
+} */

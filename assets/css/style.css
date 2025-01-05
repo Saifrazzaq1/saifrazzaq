@@ -202,6 +202,16 @@ body {
   height: 8px;
   background-color:rgb(3, 141, 168);
 }
+/* Hide cursor on mobile devices */
+@media (max-width: 480px)  {
+  body {
+    cursor: none;
+  }
+  #cursor-outer,
+  #cursor-inner {
+    display: none; /* Hide custom cursor */
+  }
+}
 
  /* curser end */
 
@@ -1615,7 +1625,7 @@ canvas {
   color: #222;
 }
 
-.st-hero-btn-group .st-btn:not(:last-child) {
+.st-hero-btn{
   margin-right: 12px;
 }
 

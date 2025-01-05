@@ -41,7 +41,7 @@
                 <!-- <li><a href="#blog" class="st-smooth-move">Blog</a></li> -->
                 <li><a href="#contact" class="st-smooth-move">Contact</a></li>
               </ul>
-              
+
               <!-- <a href="https://www.upwork.com/freelancers/~015cc2af37ddd9db38?mp_source=share"
               class="st-social-btn active" target="_blank">
               <span class="st-social-icon"><i class="fa-brands fa-upwork"></i></span>
@@ -49,8 +49,8 @@
             </a> -->
               <div class="sp-phone">
                 <a href="https://www.upwork.com/freelancers/~015cc2af37ddd9db38?mp_source=share"
-                class="st-social-btn sp-phone-no" target="_blank">
-                <i class="fa-brands fa-upwork"></i> Wrok
+                  class="st-social-btn sp-phone-no" target="_blank">
+                  <i class="fa-brands fa-upwork"></i> Wrok
                 </a>
                 <!-- <div class="sp-phone-no">UpWork</div> -->
               </div>
@@ -77,8 +77,9 @@
         <div class="st-hero-text">
           <h1 id="typewriter"></h1>
           <h2>Web & Mobile App Developer </h2>
-          <div class="st-hero-btn">
-            <a href="#contact" class="st-btn st-style1 st-color1 st-smooth-move">Hire me</a>
+          <div class="custom-hero-btn">
+            <a href="https://www.upwork.com/freelancers/~015cc2af37ddd9db38?mp_source=share"
+              class="custom-btn custom-style1 custom-color1" target="_blank">Hire me</a>
           </div>
 
         </div>
@@ -721,6 +722,13 @@
           <p>SHL-CRM</p>
         </div>
 
+        <div class="grid-item" onclick="openModal(3)">
+          <div class="st-portfolio-img">
+            <img src="assets/img/portfolio/GawApp/0.png" alt="Portfolio Project 3">
+          </div>
+          <p>GAWAPP Coffee Shops</p>
+        </div>
+
 
         <div class="grid-item" onclick="openModal(11)">
           <div class="st-portfolio-img">
@@ -728,6 +736,14 @@
           </div>
           <p>TeleHealth-App</p>
         </div>
+
+           <!-- Grid item for project 2 -->
+           <div class="grid-item" onclick="openModal(2)">
+            <div class="st-portfolio-img">
+              <img src="assets/img/portfolio/brightVisionApp/0.png" alt="Portfolio Project 2">
+            </div>
+            <p>Bright Vision E-commerce App</p>
+          </div>
 
         <div class="grid-item" onclick="openModal(12)">
           <div class="st-portfolio-img">
@@ -737,13 +753,7 @@
         </div>
 
 
-        <!-- Grid item for project 2 -->
-        <div class="grid-item" onclick="openModal(2)">
-          <div class="st-portfolio-img">
-            <img src="assets/img/portfolio/brightVisionApp/0.png" alt="Portfolio Project 2">
-          </div>
-          <p>Bright Vision E-commerce App</p>
-        </div>
+     
 
         <div class="grid-item" onclick="openModal(8)">
           <div class="st-portfolio-img">
@@ -783,13 +793,7 @@
           <p>FDS- Rider Side</p>
         </div>
 
-        <div class="grid-item" onclick="openModal(3)">
-          <div class="st-portfolio-img">
-            <img src="assets/img/portfolio/GawApp/0.png" alt="Portfolio Project 3">
-          </div>
-          <p>GAWAPP Coffee Shops</p>
-        </div>
-
+        
         <div class="grid-item" onclick="openModal(9)">
           <div class="st-portfolio-img">
             <img src="assets/img/portfolio/fruitApp/cover.png" alt="Portfolio Project 5">
@@ -823,7 +827,17 @@
       <p id="modal-description"></p>
       <p id="modal-technologies"></p>
       <p id="modal-associate"></p>
-      <div id="modal-images" class="modal-images-container"></div>
+
+      <div id="modal-buttons" class="modal-buttons-container">
+        <a id="play-store-btn" class="modal-btn" target="_blank">PlayStore</a>
+        <a id="app-store-btn" class="modal-btn" target="_blank">AppStore</a>
+        <a id="website-btn" class="modal-btn" target="_blank">Website</a>
+      </div>
+      <!-- Loading spinner and image container -->
+      <div id="modal-images-container">
+        <div id="loading-message">Loading images...</div>
+        <div id="modal-images" class="modal-images-container" style="display: none;"></div>
+      </div>
     </div>
   </div>
 
@@ -1134,7 +1148,9 @@
   <script src="assets/js/lightgallery.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/ripples.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- <script src="assets/js/particles.min.js"></script> -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
