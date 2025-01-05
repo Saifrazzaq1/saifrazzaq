@@ -1,0 +1,412 @@
+  <!-- Start Hero Seciton -->
+  <!-- <div class="st-height-b80 st-height-lg-b80"></div>
+  <section class="st-hero-wrap st-parallax">
+    <div class="st-hero st-style1 st-ripple-version">
+      <canvas id="networkCanvas"></canvas>
+      <div class="container">
+        <div class="st-hero-text">
+          <h3>Hello, I’m</h3>
+          <h1>Edward <br>Davis
+          </h1>
+          <h2>Visual Designer</h2>
+          <div class="st-hero-btn">
+            <a href="#contact" class="st-btn st-style1 st-color1 st-smooth-move">Hire me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Image - Social Link Group -->
+    <div class="st-hero-img st-to-right">
+      <!-- <img class="wow fadeInRight" src="assets/img/section/hero-img.jpg" alt="Hero"> -->
+      <div class="st-social-group wow fadeInLeft">
+        <div class="st-social-link">
+          <a href="#" class="st-social-btn active">
+            <span class="st-social-icon"><i class="fab fa-dribbble"></i></span>
+            <span class="st-icon-name">Dribbble</span>
+          </a>
+          <a href="#" class="st-social-btn">
+            <span class="st-social-icon"><i class="fab fa-behance"></i></span>
+            <span class="st-icon-name">Behance</span>
+          </a>
+          <a href="#" class="st-social-btn">
+            <span class="st-social-icon"><i class="fab fa-twitter"></i></span>
+            <span class="st-icon-name">Twitter</span>
+          </a>
+          <a href="#" class="st-social-btn">
+            <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
+            <span class="st-icon-name">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="particles-js"></div>
+  </section> -->
+  <!-- End Hero Seciton -->
+
+
+
+
+   <div class="st-height-b80 st-height-lg-b80"></div>
+  <section class="st-hero-wrap st-parallax">
+    <div class="st-hero st-style1 st-ripple-version">
+      <canvas id="networkCanvas"></canvas>
+      <div class="container">
+        <div class="st-hero-text">
+          <h3>Hello, I’m</h3>
+          <h1>Edward <br>Davis
+          </h1>
+          <h2>Visual Designer</h2>
+          <div class="st-hero-btn">
+            <a href="#contact" class="st-btn st-style1 st-color1 st-smooth-move">Hire me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Image - Social Link Group -->
+    <div class="st-hero-img st-to-right">
+      <!-- <img class="wow fadeInRight" src="assets/img/section/hero-img.jpg" alt="Hero"> -->
+      <div class="st-social-group wow fadeInLeft">
+        <div class="st-social-link">
+          <a href="#" class="st-social-btn active">
+            <span class="st-social-icon"><i class="fab fa-dribbble"></i></span>
+            <span class="st-icon-name">Dribbble</span>
+          </a>
+          <a href="#" class="st-social-btn">
+            <span class="st-social-icon"><i class="fab fa-behance"></i></span>
+            <span class="st-icon-name">Behance</span>
+          </a>
+          <a href="#" class="st-social-btn">
+            <span class="st-social-icon"><i class="fab fa-twitter"></i></span>
+            <span class="st-icon-name">Twitter</span>
+          </a>
+          <a href="#" class="st-social-btn">
+            <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
+            <span class="st-icon-name">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="particles-js"></div>
+  </section>
+
+
+
+  Effect created by me 
+  HTML code:
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connected Network Effect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hero-section">
+    <canvas id="networkCanvas"></canvas>
+    <div class="content">
+      <h1>Hello, I'm Edward Davis</h1>
+      <p>Mobile App Developer</p>
+      <button>Hire Me</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+  css code
+
+  body {
+  margin: 0;
+  overflow: hidden;
+  background: #0a0a0a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content {
+  z-index: 2;
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+  
+  js code
+
+  const canvas = document.getElementById('networkCanvas');
+const ctx = canvas.getContext('2d');
+
+// Resize canvas to full screen
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  init();
+});
+
+// Particle class
+class Particle {
+  constructor(x, y) {
+    this.x = x || Math.random() * canvas.width;
+    this.y = y || Math.random() * canvas.height;
+    this.size = 3; // Particle size
+    this.speedX = Math.random() * 2 - 1; // Horizontal speed
+    this.speedY = Math.random() * 2 - 1; // Vertical speed
+  }
+
+  // Update particle position
+  update(mouse) {
+    // Auto movement
+    this.x += this.speedX;
+    this.y += this.speedY;
+
+    // Bounce particles off canvas edges
+    if (this.x <= 0 || this.x >= canvas.width) this.speedX *= -1;
+    if (this.y <= 0 || this.y >= canvas.height) this.speedY *= -1;
+
+    // Cursor interaction
+    const dx = mouse.x - this.x;
+    const dy = mouse.y - this.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    const maxDistance = 100; // Interaction radius
+
+    if (distance < maxDistance) {
+      const force = (maxDistance - distance) / maxDistance; // Interaction strength
+      const directionX = dx / distance;
+      const directionY = dy / distance;
+
+      // Push particles away from the cursor
+      this.x -= directionX * force * 10;
+      this.y -= directionY * force * 10;
+    }
+  }
+
+  // Draw particle
+  draw() {
+    ctx.fillStyle = '#00d9ff';
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+// Particle array
+let particlesArray = [];
+const numberOfParticles = 100;
+
+// Mouse object to track cursor position
+const mouse = {
+  x: null,
+  y: null,
+};
+
+window.addEventListener('mousemove', (event) => {
+  mouse.x = event.clientX;
+  mouse.y = event.clientY;
+});
+
+window.addEventListener('mouseleave', () => {
+  mouse.x = null;
+  mouse.y = null;
+});
+
+// Initialize particles
+function init() {
+  particlesArray = [];
+  for (let i = 0; i < numberOfParticles; i++) {
+    particlesArray.push(new Particle());
+  }
+}
+
+// Connect particles with lines
+function connect() {
+  for (let a = 0; a < particlesArray.length; a++) {
+    for (let b = a + 1; b < particlesArray.length; b++) {
+      const dx = particlesArray[a].x - particlesArray[b].x;
+      const dy = particlesArray[a].y - particlesArray[b].y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < 100) {
+        const opacity = 1 - distance / 100;
+        ctx.strokeStyle = `rgba(0, 217, 255, ${opacity})`;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+        ctx.stroke();
+      }
+    }
+  }
+}
+
+// Animation loop
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  particlesArray.forEach((particle) => {
+    particle.update(mouse);
+    particle.draw();
+  });
+
+  connect();
+  requestAnimationFrame(animate);
+}
+
+// Start
+init();
+animate();
+
+
+//blog section
+  <!-- Start Blog Seciton -->
+  <section id="blog">
+    <div class="st-height-b100 st-height-lg-b80"></div>
+    <div class="container">
+      <div class="st-section-heading st-style1">
+        <h4 class="st-section-heading-title">BLOG</h4>
+        <h2 class="st-section-heading-subtitle">LATEST NEWS</h2>
+      </div>
+      <div class="st-height-b25 st-height-lg-b25"></div>
+    </div>
+
+    <!-- Latest News Container -->
+
+    <div class="container">
+      <div class="st-slider st-style2">
+        <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0"
+          data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3"
+          data-lg-slides="3" data-add-slides="3">
+          <div class="slick-wrapper">
+            <div class="slick-slide-in">
+              <div class="st-post-single st-style1">
+                <a href="blog-details.html" class="st-post-thumb st-zoom">
+                  <img src="assets/img/blog/blog1.jpg" class="st-zoom-in" alt="blog1">
+                </a>
+                <div class="st-post-info">
+                  <div class="st-post-date">
+                    By:
+                    <a href="blog-details.html" class="st-post-author">Admin</a>
+                    <span class="st-post-date-divider">|</span>
+                    <span class="st-post-publish-date">27-09-2020</span>
+                  </div>
+                  <h4 class="st-post-title"><a href="blog-details.html">What are the latest trends in Graphic design according to you?</a></h4>
+                </div>
+              </div>
+            </div><!-- .slick-slide-in -->
+            <div class="slick-slide-in">
+              <div class="st-post-single st-style1">
+                <a href="blog-details.html" class="st-post-thumb st-zoom">
+                  <img src="assets/img/blog/blog2.jpg" class="st-zoom-in" alt="blog2">
+                </a>
+                <div class="st-post-info">
+                  <div class="st-post-date">
+                    By:
+                    <a href="#" class="st-post-author">Admin</a>
+                    <span class="st-post-date-divider">|</span>
+                    <span class="st-post-publish-date">27-09-2020</span>
+                  </div>
+                  <h4 class="st-post-title"><a href="blog-details.html">What do you think makes someone a good designer?</a></h4>
+                </div>
+              </div>
+            </div><!-- .slick-slide-in -->
+            <div class="slick-slide-in">
+              <div class="st-post-single st-style1">
+                <a href="blog-details.html" class="st-post-thumb st-zoom">
+                  <img src="assets/img/blog/blog3.jpg" class="st-zoom-in" alt="blog3">
+                </a>
+                <div class="st-post-info">
+                  <div class="st-post-date">
+                    By:
+                    <a href="#" class="st-post-author">Admin</a>
+                    <span class="st-post-date-divider">|</span>
+                    <span class="st-post-publish-date">27-09-2020</span>
+                  </div>
+                  <h4 class="st-post-title"><a href="blog-details.html">Were there any mistakes you’ve made as a designer</a></h4>
+                </div>
+              </div>
+            </div><!-- .slick-slide-in -->
+            <div class="slick-slide-in">
+              <div class="st-post-single st-style1">
+                <a href="blog-details.html" class="st-post-thumb st-zoom">
+                  <img src="assets/img/blog/blog1.jpg" class="st-zoom-in" alt="blog1">
+                </a>
+                <div class="st-post-info">
+                  <div class="st-post-date">
+                    By:
+                    <a href="#" class="st-post-author">Admin</a>
+                    <span class="st-post-date-divider">|</span>
+                    <span class="st-post-publish-date">27-09-2020</span>
+                  </div>
+                  <h4 class="st-post-title"><a href="blog-details.html">What are the latest trends in Graphic design according to you?</a></h4>
+                </div>
+              </div>
+            </div><!-- .slick-slide-in -->
+            <div class="slick-slide-in">
+              <div class="st-post-single st-style1">
+                <a href="blog-details.html" class="st-post-thumb st-zoom">
+                  <img src="assets/img/blog/blog2.jpg" class="st-zoom-in" alt="blog2">
+                </a>
+                <div class="st-post-info">
+                  <div class="st-post-date">
+                    By:
+                    <a href="#" class="st-post-author">Admin</a>
+                    <span class="st-post-date-divider">|</span>
+                    <span class="st-post-publish-date">27-09-2020</span>
+                  </div>
+                  <h4 class="st-post-title"><a href="blog-details.html">What do you think makes someone a good designer?</a></h4>
+                </div>
+              </div>
+            </div><!-- .slick-slide-in -->
+            <div class="slick-slide-in">
+              <div class="st-post-single st-style1">
+                <a href="blog-details.html" class="st-post-thumb st-zoom">
+                  <img src="assets/img/blog/blog3.jpg" class="st-zoom-in" alt="blog3">
+                </a>
+                <div class="st-post-info">
+                  <div class="st-post-date">
+                    By:
+                    <a href="#" class="st-post-author">Admin</a>
+                    <span class="st-post-date-divider">|</span>
+                    <span class="st-post-publish-date">27-09-2020</span>
+                  </div>
+                  <h4 class="st-post-title"><a href="blog-details.html">Were there any mistakes you’ve made as a designer</a></h4>
+                </div>
+              </div>
+            </div><!-- .slick-slide-in -->
+          </div>
+        </div><!-- .slick-container -->
+        <div class="pagination st-style1 st-flex st-hidden"></div>
+        <!-- If dont need Pagination then add class .st-hidden -->
+      </div><!-- .st-slider -->
+    </div>
+    <div class="st-height-b95 st-height-lg-b75"></div>
+  </section>
+  <!-- End Blog Seciton -->
