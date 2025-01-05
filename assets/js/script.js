@@ -989,6 +989,80 @@ const projects = [
 //     document.getElementById('modal').style.display = 'block';
 //   }
 // }
+
+
+// function openModal(projectId) {
+//   // Find the project based on the ID
+//   const project = projects.find(p => p.id === projectId);
+
+//   if (project) {
+//     // Set project details in the modal
+//     document.getElementById('modal-title').innerText = project.title;
+//     document.getElementById('modal-description').innerText = project.description;
+//     document.getElementById('modal-technologies').innerText = project.technologies;
+//     document.getElementById('modal-associate').innerText = project.associate;
+
+//     // Set links for the buttons by their IDs
+//     if (project.playStoreLink) {
+//       document.getElementById('play-store-btn').href = project.playStoreLink;
+//     } else {
+//       document.getElementById('play-store-btn').style.display = 'none';
+//     }
+
+//     if (project.appStoreLink) {
+//       document.getElementById('app-store-btn').href = project.appStoreLink;
+//     } else {
+//       document.getElementById('app-store-btn').style.display = 'none';
+//     }
+
+//     if (project.websiteLink) {
+//       document.getElementById('website-btn').href = project.websiteLink;
+//     } else {
+//       document.getElementById('website-btn').style.display = 'none';
+//     }
+
+
+//     // Get the modal image container and clear it
+//     const imageContainer = document.getElementById('modal-images');
+//     const loadingMessage = document.getElementById('loading-message');
+//     imageContainer.innerHTML = '';  // Clear previous images
+
+//     // Show the loading message initially
+//     loadingMessage.style.display = 'block';
+//     imageContainer.style.display = 'none';
+
+//     let imagesLoaded = 0;
+//     const totalImages = project.images.length;
+
+//     // Add all project images to the modal
+//     project.images.forEach((image, index) => {
+//       const imgElement = document.createElement('img');
+//       imgElement.src = image;
+//       imgElement.alt = 'Project Image';
+//       imgElement.classList.add('modal-image');
+
+//       // When each image is loaded, increment the counter
+//       imgElement.onload = () => {
+//         imagesLoaded++;
+
+//         // If all images are loaded, hide the loading message and show images
+//         if (imagesLoaded === totalImages) {
+//           loadingMessage.style.display = 'none';  // Hide loading message
+//           imageContainer.style.display = 'flex';   // Show images container
+//         }
+//       };
+
+//       // Add click event to open fullscreen modal
+//       imgElement.onclick = () => openFullscreenModal(project.images, index);
+
+//       imageContainer.appendChild(imgElement);
+//     });
+
+//     // Show the modal
+//     document.getElementById('modal').style.display = 'block';
+//   }
+// }
+
 function openModal(projectId) {
   // Find the project based on the ID
   const project = projects.find(p => p.id === projectId);
@@ -1000,30 +1074,36 @@ function openModal(projectId) {
     document.getElementById('modal-technologies').innerText = project.technologies;
     document.getElementById('modal-associate').innerText = project.associate;
 
-    // Set links for the buttons by their IDs
+    // Reset button visibility and set links
+    const playStoreBtn = document.getElementById('play-store-btn');
+    const appStoreBtn = document.getElementById('app-store-btn');
+    const websiteBtn = document.getElementById('website-btn');
+
     if (project.playStoreLink) {
-      document.getElementById('play-store-btn').href = project.playStoreLink;
+      playStoreBtn.href = project.playStoreLink;
+      playStoreBtn.style.display = 'block'; // Reset visibility
     } else {
-      document.getElementById('play-store-btn').style.display = 'none';
+      playStoreBtn.style.display = 'none';
     }
 
     if (project.appStoreLink) {
-      document.getElementById('app-store-btn').href = project.appStoreLink;
+      appStoreBtn.href = project.appStoreLink;
+      appStoreBtn.style.display = 'block'; // Reset visibility
     } else {
-      document.getElementById('app-store-btn').style.display = 'none';
+      appStoreBtn.style.display = 'none';
     }
 
     if (project.websiteLink) {
-      document.getElementById('website-btn').href = project.websiteLink;
+      websiteBtn.href = project.websiteLink;
+      websiteBtn.style.display = 'block'; // Reset visibility
     } else {
-      document.getElementById('website-btn').style.display = 'none';
+      websiteBtn.style.display = 'none';
     }
-
 
     // Get the modal image container and clear it
     const imageContainer = document.getElementById('modal-images');
     const loadingMessage = document.getElementById('loading-message');
-    imageContainer.innerHTML = '';  // Clear previous images
+    imageContainer.innerHTML = ''; // Clear previous images
 
     // Show the loading message initially
     loadingMessage.style.display = 'block';
@@ -1045,8 +1125,8 @@ function openModal(projectId) {
 
         // If all images are loaded, hide the loading message and show images
         if (imagesLoaded === totalImages) {
-          loadingMessage.style.display = 'none';  // Hide loading message
-          imageContainer.style.display = 'flex';   // Show images container
+          loadingMessage.style.display = 'none'; // Hide loading message
+          imageContainer.style.display = 'flex'; // Show images container
         }
       };
 
@@ -1060,7 +1140,6 @@ function openModal(projectId) {
     document.getElementById('modal').style.display = 'block';
   }
 }
-
 
 function closeModal() {
   document.getElementById('modal').style.display = 'none';
