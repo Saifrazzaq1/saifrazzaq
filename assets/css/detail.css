@@ -632,7 +632,7 @@
   max-height: 100px;
 } */
 
-#other h3 {
+.container h3.detail {
   font-size: 16px; /* Adjust font size as needed */
   font-weight: 300; /* Medium font weight for readability */
   color: #ffffff; /* Dark gray for better contrast */
